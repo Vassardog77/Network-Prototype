@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"/>
+    <title>NetworkTest1</title>
+  <head>
+    <script src="https://accounts.google.com/gsi/client" onload="initTokenClient()" async defer></script>
+    <script>
+        var access_token;
+        var tokenClient;
+        var clientId = '419138563147-lblak6s03v4i6lssberpm1vr4gqg000b.apps.googleusercontent.com';
+
+        function initTokenClient() {
+            tokenClient = google.accounts.oauth2.initTokenClient({
+                client_id: clientId,
+                scope: 'https://www.googleapis.com/auth/calendar',
+                callback: (tokenResponse) => {
+                    access_token = tokenResponse.access_token;
+                    localStorage.setItem('data', access_token)
+                },
+            });
+        }
+
+        function getToken() {
+            tokenClient.requestAccessToken();
+        }
+      
+    </script></head>
+  <body>
+    <div id="G_login_button">
+      <button onclick="getToken()">Login with Google</button>
+    </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
