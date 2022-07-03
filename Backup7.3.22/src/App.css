@@ -1,0 +1,140 @@
+#ig_display {
+    text-align: center;
+}
+
+#fblogin_button {
+    position: absolute;
+
+}
+
+#fb_display {
+    position: relative;
+}
+
+#fb_page_input {
+    margin-top: 50px;
+}
+
+#file_test {
+    position: absolute;
+    margin-top: 310px;
+}
+
+
+#G_login_button {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 400px;
+}
+
+#G_display {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 400px;
+    height: 700px;
+    width: 1000px;
+}
+
+#dropdown {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 600px;
+    color: blue;
+}
+
+button {
+    background-color: rgb(0,131,185);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+button:hover {
+    background-color: black;
+  }
+  .button:active {
+    background-color: white;
+  }
+
+select {
+    background-color: rgb(0,131,185);
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+#calendar {
+    height: 700px;
+    width: 1000px;
+}
+
+
+
+* {
+    box-sizing:border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    min-height: 100vh;
+    position: absolute;
+}
+
+.menu {
+    width: 25rem;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #0083b9;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu-item {
+    list-style:none;
+    border-top: 1px solid darkblue;
+    overflow: hidden;
+}
+
+.btn {
+    display: block;
+    padding: 1rem 1.2rem;
+    background: #0083b9;
+    color: white;
+    position: relative;
+}
+
+
+.menu-item__sub {
+    background: #77ceef;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    max-height: 0;
+    height: 500px;
+}
+.menu-item__sub div {
+    display: block;
+    padding: 0.3rem 0.3rem;
+    color: darkblue;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.menu-item:target .menu-item__sub {
+    max-height: 30em;
+}
+
+#ig_image {
+    margin-top: 50px;
+}
+
